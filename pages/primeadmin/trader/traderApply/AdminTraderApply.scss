@@ -1,0 +1,67 @@
+.admin-trader-apply {
+  width: 100%;
+  min-height: 700px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2.4px 28px 0 rgba(58, 59, 69, 0.15);
+  position: relative;
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    &__head {
+      text-align: center;
+      &__tr {
+        height: 40px;
+        color: #fff;
+        font-weight: 700;
+        background-color: #4e73df;
+      }
+      td {
+        vertical-align: middle;
+      }
+    }
+
+    &__body {
+      text-align: center;
+      font-size: 15px;
+
+      td {
+        padding: 15px 10px;
+      }
+
+      &__tr {
+        height: 40px;
+        border-top: 1px solid #eee;
+      }
+      &__btns {
+        width: 250px;
+        &__accept,
+        &__deny {
+          border: none;
+          color: #fff;
+          width: 100px;
+          height: 40px;
+          border-radius: 3px;
+          font-size: 16px;
+          background-color: #1976d2;
+          cursor: pointer;
+        }
+        &__deny {
+          background-color: #dd2c00;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  &__none {
+    padding: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  & > .pagination {
+    position: absolute;
+    bottom: 0;
+  }
+}

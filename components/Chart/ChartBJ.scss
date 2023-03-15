@@ -1,0 +1,102 @@
+.chartBJ {
+  width: 1600px;
+  height: 190px;
+  border-radius: 3px;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  background-color: #141414;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    &__item {
+      width: 282px;
+      height: 180px;
+      border-radius: 2px;
+      border: 1px solid #313442;
+      padding: 14px 0;
+      box-sizing: border-box;
+      margin-right: 5px;
+      text-align: center;
+      &__name {
+        font-size: 18px;
+        line-height: 20px;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+      &__position {
+        margin-bottom: 10px;
+        &--Short {
+          font-size: 21px;
+          line-height: 24px;
+          font-weight: 700;
+          color: #dd2c00;
+        }
+        &--Long {
+          font-size: 21px;
+          line-height: 24px;
+          color: #089981;
+          font-weight: 700;
+        }
+        &--- {
+          font-size: 21px;
+          line-height: 24px;
+          color: #fff;
+          font-weight: 700;
+        }
+        & > span {
+          display: block;
+          font-size: 10px;
+          line-height: 12px;
+          color: #fff;
+          font-weight: lighter;
+          margin-bottom: 2px;
+        }
+      }
+
+      &__rate {
+        margin-bottom: 10px;
+        & > span {
+          display: block;
+          margin-bottom: 2px;
+          font-size: 10px;
+          line-height: 12px;
+          color: #fff;
+          letter-spacing: -0.5px;
+          font-weight: lighter;
+        }
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #089981;
+      }
+      &__rate--down {
+        margin-bottom: 10px;
+        & > span {
+          display: block;
+          margin-bottom: 2px;
+          font-size: 10px;
+          line-height: 12px;
+          color: #fff;
+          letter-spacing: -0.5px;
+          font-weight: lighter;
+        }
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #dd2c00;
+      }
+      &__update {
+        font-size: 10px;
+        text-align: center;
+        line-height: 12px;
+        letter-spacing: -0.25px;
+        color: #9e9e9e;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

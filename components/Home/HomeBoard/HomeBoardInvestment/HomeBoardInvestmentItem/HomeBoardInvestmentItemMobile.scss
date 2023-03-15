@@ -1,0 +1,53 @@
+@media only screen and (max-width: 767px) {
+  .home-board-investment-item-mobile {
+    width: 200px;
+    height: 174px;
+    border: 0.5px solid #cfd8dc;
+    box-sizing: border-box;
+    border-radius: 6px;
+    cursor: pointer;
+    &:active {
+      background-color: #eceff1;
+    }
+
+    &__thumbnail {
+      width: 100%;
+      height: 110px;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__information {
+      padding: 10px 10px 0 10px;
+      &__title {
+        font-size: 13px;
+        letter-spacing: -0.33px;
+        color: #333;
+        line-height: 12px;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+      &__content {
+        margin-top: 6px;
+        font-size: 8px;
+        color: #9e9e9e;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}

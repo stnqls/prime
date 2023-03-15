@@ -1,0 +1,32 @@
+.community {
+  &__contents {
+    max-width: 1400px;
+    margin: 0 auto;
+    &__menu {
+      width: 330px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+      margin-bottom: 30px;
+      &__item {
+        width: 147px;
+        height: 34px;
+        border-radius: 17px;
+        background-color: transparent;
+        text-align: center;
+        border: 2px solid rgb(83, 83, 83);
+        cursor: pointer;
+        &--click {
+          width: 147px;
+          height: 34px;
+          border-radius: 17px;
+          background-color: transparent;
+          text-align: center;
+          border: 2px solid #0083db;
+          color: #0083db;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

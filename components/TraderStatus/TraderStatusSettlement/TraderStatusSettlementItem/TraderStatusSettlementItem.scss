@@ -1,0 +1,68 @@
+.trader-status-settlement-item {
+  &__contents {
+    &__list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: table;
+      height: 50px;
+
+      li {
+        position: relative;
+        font-family: "Noto Sans KR", serif, Arial;
+        display: table-cell;
+        font-size: 14px;
+        font-weight: 400;
+        height: 51px;
+        color: #232323;
+        vertical-align: middle;
+        border-top: 1px solid #eee;
+        line-height: 1;
+        padding: 5px 10px;
+      }
+
+      &__nickname {
+        width: 150px;
+      }
+
+      &__email {
+        width: calc(100% - 600px);
+      }
+
+      &__payment-price {
+        width: 150px;
+        text-align: center;
+      }
+
+      &__settlement-price {
+        width: 150px;
+        text-align: center;
+      }
+
+      &__payment-status {
+        width: 150px;
+        text-align: center;
+
+        span {
+          font-weight: 700;
+          padding: 8px 10px;
+          border-radius: 5px;
+
+          &.success {
+            background: #2651a3;
+            color: #fff;
+          }
+
+          &.pending {
+            background: #eee;
+          }
+        }
+      }
+
+      &__end-date {
+        width: 150px;
+        text-align: center;
+      }
+    }
+  }
+}

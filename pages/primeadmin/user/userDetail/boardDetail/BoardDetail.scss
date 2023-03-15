@@ -1,0 +1,39 @@
+.admin-board-detail {
+  &__delete {
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    background-color: #db2c00;
+    font-size: 16px;
+    float: right;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    &__head {
+      &__tr {
+        height: 40px;
+        background-color: #4e73df;
+        color: #fff;
+        height: 40px;
+      }
+    }
+    &__body {
+      &__tr {
+        height: 40px;
+      }
+      &__more {
+        &__img {
+          cursor: pointer;
+          background-color: #4e73df;
+          border-radius: 50%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

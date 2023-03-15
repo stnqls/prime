@@ -1,0 +1,109 @@
+.admin-partnership-detail {
+  background-color: #fff;
+  width: 1200px;
+  border-radius: 5px;
+  box-shadow: 0 2.4px 28px 0 rgba(58, 59, 69, 0.15);
+  padding: 50px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  overflow-y: auto;
+  height: 750px;
+
+  &-cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  &__text {
+    display: inline-block;
+    min-width: 300px;
+    border-radius: 3px;
+    margin-left: 7px;
+    background-color: #ddd;
+    padding: 3px 10px;
+  }
+  &__info {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    &__name,
+    &__email,
+    &__phone {
+      width: calc(100% / 3);
+    }
+  }
+  &__content {
+    margin-bottom: 5px;
+    &__title {
+      display: flex;
+      margin-bottom: 20px;
+      &__text {
+        width: 100%;
+        border-radius: 3px;
+        margin-left: 7px;
+        background-color: #ddd;
+        padding: 3px 10px;
+      }
+    }
+    &__text {
+      width: 100%;
+      min-height: 300px;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 3px;
+      background-color: #ddd;
+      overflow-y: auto;
+      margin-bottom: 20px;
+      word-break: break-all;
+    }
+  }
+
+  &__replybtn {
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-color: #4e73df;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 10px;
+  }
+
+  &__answer {
+    resize: none;
+    width: 100%;
+    min-height: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: none;
+    border: 1px solid #9e9e9e;
+    overflow-y: auto;
+  }
+
+  &__answer-ready {
+    width: 100%;
+    min-height: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    overflow-y: auto;
+    background-color: #e9eeff;
+    word-break: break-all;
+  }
+}

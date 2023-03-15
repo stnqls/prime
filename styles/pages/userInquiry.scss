@@ -1,0 +1,100 @@
+.user-inquiry {
+  &__list {
+    &__item {
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 35px;
+      &__content {
+        padding: 26px 10px;
+        min-height: 89px;
+        height: auto;
+        border-top: 1px solid #cfd8dc;
+        border-bottom: 1px solid #cfd8dc;
+        &__info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &__title {
+            font-size: 22px;
+            line-height: 26px;
+            letter-spacing: -0.55px;
+            color: #333;
+          }
+          &__status {
+            font-size: 18px;
+            line-height: 20px;
+            color: #333;
+          }
+        }
+        &__text {
+          display: none;
+          margin-top: 12px;
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: -0.45px;
+          word-break: break-all;
+          padding: 10px;
+          color: #9e9e9e;
+        }
+        &__answer {
+          display: none;
+          margin-top: 25px;
+          padding: 15px;
+          background-color: #f9fafb;
+          color: #9e9e9e;
+
+          position: relative;
+          min-height: 250px;
+          &__text {
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: -0.45px;
+            color: #333;
+            overflow-y: auto;
+            word-break: break-all;
+          }
+          &__date {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            color: #9e9e9e;
+          }
+        }
+      }
+      &__date {
+        width: 106px;
+        height: 28px;
+        border-radius: 14px;
+        border: 1px solid #2551a3;
+        font-size: 14px;
+        text-align: center;
+        color: #2551a3;
+        background-color: #fff;
+        line-height: normal;
+        padding: 6px 0;
+        position: absolute;
+        top: -12px;
+        left: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-2 {
+    color: #2551a3;
+  }
+  &__none {
+    padding-top: 124px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 46px;
+    letter-spacing: -0.75px;
+    color: #333;
+  }
+}
+
+.show {
+  display: block;
+}

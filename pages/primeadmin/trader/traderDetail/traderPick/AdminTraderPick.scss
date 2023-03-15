@@ -1,0 +1,17 @@
+.admin-trader-pick {
+  border-collapse: collapse;
+  &__thead {
+    &__tr {
+      background-color: #4e73df;
+      color: #fff;
+      text-align: center;
+      height: 40px;
+    }
+  }
+  &__tbody {
+    &__tr {
+      text-align: center;
+      height: 40px;
+    }
+  }
+}

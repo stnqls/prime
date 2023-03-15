@@ -1,0 +1,117 @@
+.trader-status-subscriber {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 662px;
+  margin: 70px 0;
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(144, 164, 174, 0.16);
+  border: 1px solid #cfd8dc;
+  border-radius: 6px;
+
+  &__contents {
+    min-height: 600px;
+    position: relative;
+    &__title {
+      font-size: 20px;
+      font-weight: 900;
+      color: #2551a3;
+      line-height: 32px;
+      text-align: center;
+      margin: 45px auto;
+    }
+
+    &__menu {
+      display: flex;
+      margin-bottom: 15px;
+      &__item {
+        color: #9e9e9e;
+        font-size: 15px;
+        padding: 14px;
+        cursor: pointer;
+        &.selected {
+          font-weight: 700;
+          color: #333;
+        }
+      }
+    }
+
+    &__table {
+      &__subject {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+          position: relative;
+          display: table-cell;
+          font-size: 15px;
+          font-weight: 700;
+          color: #333;
+          vertical-align: middle;
+          line-height: 1;
+          padding-bottom: 17px;
+          float: left;
+          text-align: center;
+        }
+
+        &__nickname {
+          width: 150px;
+        }
+
+        &__product-name {
+          width: calc(100% - 550px);
+        }
+
+        &__product-price {
+          width: 150px;
+          text-align: center;
+        }
+
+        &__end-date {
+          width: 250px;
+          text-align: center;
+        }
+      }
+
+      &__lists {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+
+        li {
+          float: left;
+          width: 33.33%;
+          border-right: 1px solid #eceff1;
+
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }
+
+      &__item {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        font-weight: 500;
+      }
+    }
+
+    &__none {
+      font-size: 25px;
+      color: #333;
+      text-align: center;
+      padding: 100px 0;
+      font-weight: 700;
+    }
+    & .pagination {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

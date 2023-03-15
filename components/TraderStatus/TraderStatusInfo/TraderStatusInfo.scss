@@ -1,0 +1,48 @@
+.trader-status-info {
+  position: relative;
+  width: 230px;
+  height: 380px;
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(144, 164, 174, 0.16);
+  border: 1px solid #cfd8dc;
+  padding: 30px;
+  border-radius: 6px;
+
+  &__contents {
+    height: 100%;
+    &__lists {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      &__list {
+        &__title {
+          font-size: 18px;
+          color: #333;
+          line-height: 26px;
+          text-align: center;
+        }
+
+        &__value {
+          font-size: 26px;
+          line-height: 26px;
+          font-weight: 700;
+          margin-top: 20px;
+          color: #2551a3;
+
+          &.over {
+            color: #089981;
+          }
+
+          &.under {
+            color: #dd2c00;
+          }
+        }
+      }
+    }
+  }
+}

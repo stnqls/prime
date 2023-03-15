@@ -1,0 +1,12 @@
+.traderlistitem__table__more {
+  &__contain {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #4e73df;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

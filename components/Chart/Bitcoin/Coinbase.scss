@@ -1,0 +1,126 @@
+.bitcoin-coinbase {
+  width: 680px;
+  height: 1159px;
+  border-radius: 3px;
+  background-color: #141414;
+
+  &__title {
+    height: 50px;
+    border-bottom: 1px solid #313442;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.45px;
+    color: #fff;
+    padding: 16px 0 14px;
+  }
+
+  &__body {
+    padding: 10px 0;
+
+    &__selling {
+      width: 340px;
+      height: 510px;
+
+      &__list {
+        display: flex;
+        flex-direction: column-reverse;
+        &__item {
+          height: 34px;
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+          position: relative;
+          color: #fff;
+          font-size: 12px;
+          line-height: 14px;
+          vertical-align: text-top;
+
+          &__graph {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          & > span {
+            width: 71px;
+            text-align: right;
+            z-index: 9;
+            line-height: normal;
+          }
+          &__first {
+            color: #dd2c00;
+          }
+        }
+      }
+    }
+
+    &__buying {
+      margin-top: 3px;
+      width: 340px;
+      height: 510px;
+      &__top {
+        font-size: 21px;
+        line-height: 24px;
+        color: #fff;
+        margin-top: 7px;
+        margin-bottom: 6px;
+      }
+      &__list {
+        &__item {
+          height: 34px;
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+          position: relative;
+          vertical-align: text-top;
+          color: #fff;
+          font-size: 12px;
+          line-height: 14px;
+          &__graph {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          & > span {
+            width: 71px;
+            text-align: right;
+            z-index: 9;
+            line-height: normal;
+          }
+          &__first {
+            color: #089981;
+          }
+        }
+      }
+    }
+
+    &__realtime {
+      float: right;
+      width: 340px;
+      height: 1041px;
+      &__list {
+        &__item {
+          height: 34px;
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: #fff;
+          font-size: 12px;
+          line-height: 14px;
+          &-buy {
+            color: #089981;
+          }
+          &-sell {
+            color: #dd2c00;
+          }
+          & > span {
+            display: inline-block;
+            width: 71px;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}

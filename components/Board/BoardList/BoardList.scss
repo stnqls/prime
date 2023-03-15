@@ -1,0 +1,134 @@
+.board-list {
+  border-collapse: collapse;
+  width: 1400px;
+  margin: 0 auto 80px;
+  &__head {
+    font-size: 18px;
+    line-height: 20px;
+    color: #333;
+    text-align: center;
+    border-top: 1px solid #eceff1;
+    border-bottom: 1px solid #eceff1;
+    &__tr {
+      & > td {
+        height: 80px;
+      }
+    }
+  }
+  &__body {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #9e9e9e;
+    &__tr {
+      cursor: pointer;
+      border-bottom: 1px solid #eceff1;
+      & > td {
+        height: 80px;
+      }
+      &__title {
+        color: #333;
+        text-align: left;
+      }
+    }
+    &__tr-notice {
+      cursor: pointer;
+      border-bottom: 1px solid #eceff1;
+      background-color: #eceff1;
+      & > td {
+        height: 80px;
+      }
+      &__no,
+      &__title {
+        color: #2551a3;
+        font-weight: 700;
+      }
+      &__title {
+        text-align: left;
+      }
+    }
+    &__tr-fixed {
+      cursor: pointer;
+      border-bottom: 1px solid #eceff1;
+      background-color: #eceff1;
+      & > td {
+        height: 80px;
+      }
+      &__no,
+      &__title {
+        color: #e51616;
+        font-weight: 700;
+      }
+      &__title {
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .board-list {
+    border-collapse: collapse;
+    width: 360px;
+    margin: 0 auto;
+    &__head {
+      font-size: 18px;
+      line-height: 20px;
+      color: #333;
+      text-align: center;
+      border-top: 1px solid #eceff1;
+      border-bottom: 1px solid #eceff1;
+      &__tr {
+        & > td {
+          height: 80px;
+        }
+      }
+    }
+    &__body {
+      font-size: 18px;
+      line-height: 20px;
+      text-align: center;
+      color: #9e9e9e;
+      &__tr {
+        border-bottom: 1px solid #eceff1;
+        & > td {
+          height: 80px;
+        }
+        &__title {
+          color: #333;
+          text-align: left;
+        }
+      }
+      &__tr-notice {
+        border-bottom: 1px solid #eceff1;
+        background-color: #eceff1;
+        & > td {
+          height: 80px;
+        }
+        &__no,
+        &__title {
+          color: #2551a3;
+          font-weight: 700;
+        }
+        &__title {
+          text-align: left;
+        }
+      }
+      &__tr-fixed {
+        border-bottom: 1px solid #eceff1;
+        background-color: #eceff1;
+        & > td {
+          height: 80px;
+        }
+        &__no,
+        &__title {
+          color: #e51616;
+          font-weight: 700;
+        }
+        &__title {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

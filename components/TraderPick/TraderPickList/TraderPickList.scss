@@ -1,0 +1,142 @@
+.trader-pick-list {
+  position: relative;
+  width: 100%;
+  float: left;
+  padding-bottom: 150px;
+
+  &__header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eceff1;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    &__title {
+      font-size: 24px;
+      line-height: 27px;
+      color: #333;
+    }
+    &__add {
+      cursor: pointer;
+      width: 118px;
+      height: 35px;
+      background-color: #2551a3;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 14px;
+      padding: 9px;
+      text-align: center;
+      line-height: normal;
+      &:hover {
+        background-color: #1976d2;
+      }
+    }
+  }
+
+  &__sort {
+    margin-bottom: 10px;
+    padding: 10px;
+    min-width: 290px;
+  }
+
+  &__table {
+    height: 571px;
+    position: relative;
+    &__subject {
+      list-style: none;
+      padding: 0 15px;
+      height: 40px;
+      margin-bottom: 15px;
+      background: #2551a3;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      vertical-align: middle;
+      line-height: normal;
+
+      &__package {
+        width: 128px;
+        text-align: left;
+      }
+
+      &__type {
+        width: 44px;
+      }
+
+      &__coin {
+        min-width: 169px;
+      }
+
+      &__entry-price {
+        width: 118px;
+      }
+
+      &__target-price {
+        width: 118px;
+      }
+
+      &__entry-date {
+        width: 66px;
+      }
+
+      &__end-price {
+        width: 118px;
+      }
+      &__end-date {
+        width: 66px;
+      }
+
+      &__profit-rate {
+        width: 96px;
+      }
+
+      &__action {
+        width: 69px;
+      }
+    }
+
+    &__lists {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-align: center;
+
+      li {
+        float: left;
+        width: 33.33%;
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+
+    &__item {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      min-height: 670px;
+    }
+
+    & .pagination {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__none {
+    text-align: center;
+    margin-top: 124px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    line-height: 46px;
+    letter-spacing: -0.75px;
+  }
+}

@@ -1,0 +1,62 @@
+.admin-reviews {
+  width: 100%;
+  &__content {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2.4px 28px 0 rgba(58, 59, 69, 0.15);
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      background-color: #f8f9fc;
+      border-bottom: 1px solid #e3e6f0;
+      height: 60px;
+      &__menu {
+        font-weight: 700;
+        display: flex;
+        color: #333;
+        &__item {
+          margin-right: 10px;
+          &:hover {
+            cursor: pointer;
+          }
+          &--click {
+            color: #4e73df;
+            margin-right: 10px;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      &__search {
+        &__delete {
+          width: 90px;
+          height: 35px;
+          border: none;
+          border-radius: 5px;
+          margin-right: 15px;
+          cursor: pointer;
+          background-color: #dd2c00;
+          color: #fff;
+          font-size: 14px;
+        }
+        &__input {
+          width: 300px;
+          height: 35px;
+          background-color: #fff;
+          border: none;
+          padding: 6px 12px;
+          box-sizing: border-box;
+          color: #6e707e;
+          border-radius: 5px 0 0 5px;
+        }
+      }
+    }
+    &__body {
+      height: 700px;
+    }
+  }
+}

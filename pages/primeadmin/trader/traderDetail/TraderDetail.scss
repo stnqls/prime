@@ -1,0 +1,68 @@
+.traderdetail {
+  width: 100%;
+  position: relative;
+
+  .view-trader-pick {
+    margin-top: 0;
+  }
+  .view-trader-pick__title {
+    display: none;
+  }
+
+  &__title {
+    color: #5a5c69;
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  &__content {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2.4px 28px 0 rgba(58, 59, 69, 0.15);
+    min-height: 700px;
+    position: relative;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      background-color: #f8f9fc;
+      border-bottom: 1px solid #e3e6f0;
+
+      &__title {
+        font-weight: 700;
+        color: #333;
+        display: flex;
+        &__item {
+          margin-right: 15px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__body {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 650px;
+      height: auto;
+      &__tr {
+        height: 40px;
+        border-top: 1px solid #eee;
+      }
+
+      td {
+        padding: 15px 10px;
+      }
+    }
+  }
+  & .pagination {
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0px;
+  }
+}
+.active {
+  color: #4e73df;
+}

@@ -1,0 +1,68 @@
+.userdetail {
+  width: 100%;
+  &__title {
+    color: #5a5c69;
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  &__content {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2.4px 28px 0 rgba(58, 59, 69, 0.15);
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      background-color: #f8f9fc;
+      border-bottom: 1px solid #e3e6f0;
+
+      &__title {
+        font-weight: 700;
+        color: #333;
+        display: flex;
+        &__item {
+          margin-right: 15px;
+          cursor: pointer;
+        }
+      }
+      &__search {
+        display: flex;
+        &__input {
+          width: 300px;
+          height: 35px;
+          background-color: #fff;
+          border: none;
+          padding: 6px 12px;
+          box-sizing: border-box;
+          color: #6e707e;
+          border-radius: 5px 0 0 5px;
+        }
+      }
+    }
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      height: 750px;
+      position: relative;
+      &__tr {
+        height: 40px;
+        border-top: 1px solid #eee;
+      }
+
+      td {
+        padding: 15px 10px;
+      }
+      & .pagination {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}
+.active {
+  color: #4e73df;
+}

@@ -1,0 +1,152 @@
+.find {
+  background: #f8fbff;
+
+  &__contents {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 150px 30px;
+
+    &__title {
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    &__lists {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      padding-bottom: 5px;
+
+      li {
+        cursor: pointer;
+        width: calc(50% - 15px);
+        float: left;
+        margin-right: 30px;
+        text-align: center;
+        border: 1px solid rgb(235, 235, 235);
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.05);
+        border-radius: 1000px;
+        padding: 20px;
+        font-size: 17px;
+        font-weight: 700;
+        background: #fff;
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+
+        &.active {
+          background: #0083db;
+          color: #fff;
+        }
+      }
+    }
+
+    &__inputs {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 30px;
+
+      li {
+        display: none;
+        width: 100%;
+        text-align: center;
+        border: 1px solid rgb(235, 235, 235);
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.05);
+        border-radius: 15px;
+        overflow: hidden;
+        padding: 30px;
+        font-size: 17px;
+        font-weight: 700;
+        background: #fff;
+
+        .find__contents__inputs__list__passwords {
+          margin-top: 15px;
+        }
+
+        input {
+          padding: 0;
+          padding-bottom: 15px;
+          border: 1px solid rgb(235, 235, 235);
+          box-shadow: 0 6px 6px rgba(0, 0, 0, 0.05);
+          background: #fff;
+          padding: 15px;
+          font-weight: 900;
+          width: 100%;
+          margin-top: 15px;
+          text-align: center;
+          font-size: 17px;
+          border-radius: 15px;
+
+          &::placeholder {
+            color: rgb(117, 117, 117);
+          }
+
+          &.active {
+            border: 1px solid rgb(243, 33, 33);
+          }
+
+          &.check {
+            border: 1px solid #2196f3;
+          }
+        }
+
+        span {
+          color: #0083db;
+          font-weight: 900;
+        }
+
+        &.active {
+          display: block;
+        }
+
+        .find__contents__inputs__list__tip {
+          display: none;
+          text-align: center;
+          margin-top: 10px;
+          font-size: 14px;
+          font-family: "Noto Sans KR", serif, Arial;
+          color: rgb(243, 33, 33);
+          font-weight: 600;
+
+          &.active {
+            display: block;
+          }
+        }
+      }
+    }
+
+    &__button {
+      cursor: pointer;
+      margin-top: 50px;
+      width: 100%;
+      background: #0083db;
+      padding: 20px;
+      color: #fff;
+      border-radius: 1000px;
+      text-align: center;
+      font-size: 19px;
+      font-weight: 700;
+      border: 1px solid rgb(235, 235, 235);
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    &__registration {
+      position: relative;
+      display: table;
+      margin: 0 auto;
+      margin-top: 50px;
+      text-align: center;
+      font-size: 17px;
+      font-weight: 700;
+
+      span {
+        padding-left: 30px;
+        color: #0083db;
+        font-weight: 900;
+      }
+    }
+  }
+}

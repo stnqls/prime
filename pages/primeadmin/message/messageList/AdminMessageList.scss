@@ -1,0 +1,99 @@
+.admin-message-list {
+  &__trader-list {
+    position: relative;
+    width: 30%;
+    height: 670px;
+
+    &__item {
+      font-size: 17px;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      &__img {
+        width: 45px;
+        height: 45px;
+        margin-right: 20px;
+        border-radius: 50%;
+      }
+      &:hover {
+        background-color: rgba(#4e73df, 0.4);
+      }
+    }
+    &__item--click {
+      font-size: 17px;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background-color: rgba(#4e73df, 0.8);
+      &__img {
+        width: 45px;
+        height: 45px;
+        margin-right: 20px;
+        border-radius: 50%;
+      }
+    }
+    & .pagination {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  &__user-list {
+    width: 70%;
+    border-left: 1px solid #333;
+    position: relative;
+    &__item {
+      font-size: 17px;
+      text-align: center;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(78, 158, 223, 0.4);
+      }
+      &__userinfo {
+        display: flex;
+        align-items: center;
+        &__img {
+          width: 55px;
+          height: 55px;
+        }
+      }
+      &__message {
+        width: 50%;
+        background-color: #c2cdf0;
+        line-height: 2.3;
+        border-radius: 7px;
+        white-space: normal;
+        overflow: hidden;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+      &__date {
+        font-size: 15px;
+        align-self: flex-end;
+      }
+    }
+    & .pagination {
+      position: absolute;
+      bottom: 0;
+    }
+    &__none {
+      padding: 30px;
+      font-size: 25px;
+      font-weight: 900;
+      color: #868383;
+      text-align: center;
+    }
+  }
+}

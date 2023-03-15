@@ -1,0 +1,56 @@
+.admin-comment-detail {
+  &__delete {
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    background-color: #db2c00;
+    font-size: 16px;
+    float: right;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    &__head {
+      &__tr {
+        height: 40px;
+        background-color: #4e73df;
+        color: #fff;
+        height: 40px;
+      }
+    }
+    &__body {
+      & > .deleted {
+        color: #9e9e9e;
+      }
+      &__tr {
+        height: 40px;
+        cursor: pointer;
+        color: #333;
+        &__content {
+          width: 50%;
+          & > span {
+            word-break: break-all;
+            display: -webkit-box;
+            overflow: hidden;
+            white-space: normal;
+            word-wrap: break-word;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+          }
+        }
+      }
+      &__more {
+        &__img {
+          cursor: pointer;
+          background-color: #4e73df;
+          border-radius: 50%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

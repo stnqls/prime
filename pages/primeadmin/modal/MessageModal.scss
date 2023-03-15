@@ -1,0 +1,52 @@
+.admin-message-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-30%) translateY(-50%);
+  width: 600px;
+  height: 800px;
+  z-index: 10;
+  animation: fadeIn 0.4s;
+
+  &__hide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 9;
+  }
+  &__title {
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 27px;
+    width: 15px;
+    height: 15px;
+  }
+  &__body {
+    padding: 30px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &__content {
+      width: 100%;
+      height: 95%;
+      background-color: rgb(189, 205, 216);
+      overflow-y: auto;
+      padding: 10px;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+
+  &__close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.1;
+  }
+}
+
+textarea {
+  margin: 0;
+  padding: 0;
+}
+
+.admin-review {
+  width: 500px;
+  height: 650px;
+  background-color: #fff;
+  border: 1px solid #e3e6f0;
+  border-top: 8px solid #4e73df;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  margin-left: 110px;
+
+  &__title {
+    color: #333;
+    font-size: 17px;
+  }
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__packagename {
+      margin-top: 80px;
+      text-align: center;
+      font-weight: 900;
+      font-size: 30px;
+      font-size: 24px;
+    }
+    &__rating {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      color: gray;
+    }
+    .clickedStar {
+      color: #0083db;
+    }
+    &__text {
+      margin-top: 30px;
+
+      &__textarea {
+        margin-top: 5px;
+        width: 100%;
+        height: 200px;
+        padding: 20px;
+        box-sizing: border-box;
+        resize: none;
+        border: 1px solid lightgrey;
+        font-size: 17px;
+      }
+    }
+    &__btns {
+      margin-top: 40px;
+      align-self: center;
+      &__btn {
+        cursor: pointer;
+        width: 150px;
+        padding: 10px;
+        border: none;
+        border-radius: 7px;
+        color: #fff;
+        font-size: 15px;
+        background-color: #4e73df;
+        margin-right: 30px;
+      }
+      &__btn-delete {
+        cursor: pointer;
+        width: 150px;
+        padding: 10px;
+        border: none;
+        border-radius: 7px;
+        color: #fff;
+        font-size: 15px;
+        background-color: #df4e4e;
+      }
+    }
+    &__exit {
+      cursor: pointer;
+      width: 25px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.review {
+  min-height: calc(100vh - 200px);
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .review {
+    min-height: 890px;
+    background: #f8fbff;
+  }
+}

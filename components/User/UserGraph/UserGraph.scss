@@ -1,0 +1,36 @@
+.user-graph {
+  padding-bottom: 10px;
+  &__contents {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.05);
+
+    &__title {
+      position: relative;
+      font-size: 24px;
+      font-weight: 900;
+    }
+
+    &__chart {
+      margin-top: 50px;
+      height: 400px;
+
+      g.recharts-layer.recharts-cartesian-axis.recharts-xAxis.xAxis
+        > g
+        > g
+        > text
+        > tspan {
+        display: block;
+        position: relative;
+        font-family: "Noto Sans KR", serif, Arial;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 5px 10px;
+        border-radius: 1000px;
+        opacity: 0.7;
+      }
+    }
+  }
+}

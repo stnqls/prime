@@ -1,0 +1,16 @@
+.trading-table {
+  &__tbody {
+    & tr {
+      cursor: pointer;
+    }
+    & td {
+      padding: 15px 30px;
+    }
+    &__no,
+    &__updated,
+    &__views,
+    &__recommended {
+      text-align: center;
+    }
+  }
+}

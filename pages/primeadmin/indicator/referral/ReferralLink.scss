@@ -1,0 +1,42 @@
+.referralLink {
+  width: 510px;
+  color: #333;
+  font-size: 20px;
+  text-align: center;
+  background-color: #f8f9fc;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
+  padding: 30px;
+  margin-bottom: 30px;
+  &__list {
+    margin-top: 10px;
+    text-align: left;
+
+    &__item {
+      display: flex;
+      margin-bottom: 15px;
+
+      img {
+        width: 100px;
+        height: auto;
+      }
+
+      & > input {
+        min-width: 350px;
+        width: calc(100%-100px);
+        padding-left: 10px;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  &__btn {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}

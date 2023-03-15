@@ -1,0 +1,36 @@
+.etc {
+  width: 510px;
+  color: #333;
+  text-align: center;
+  background-color: #f8f9fc;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
+  padding: 30px;
+  margin-bottom: 30px;
+
+  &__list {
+    text-align: left;
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+
+      & > input {
+        min-width: 250px;
+        height: 33px;
+        padding-left: 10px;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  &__btn {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}

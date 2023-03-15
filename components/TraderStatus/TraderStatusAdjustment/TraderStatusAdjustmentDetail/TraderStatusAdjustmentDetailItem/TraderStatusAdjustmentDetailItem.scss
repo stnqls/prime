@@ -1,0 +1,72 @@
+.trader-status-adjustment-detail-item {
+  background-color: #fff;
+  border: 1px solid #eceff1;
+  border-radius: 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__list {
+    margin: 0;
+    list-style: none;
+    display: table;
+    text-align: center;
+    padding: 21px 24px;
+    height: 60px;
+
+    li {
+      position: relative;
+      display: table-cell;
+      font-size: 15px;
+      color: #333;
+      vertical-align: middle;
+      line-height: 1;
+    }
+
+    &__nickname {
+      width: 140px;
+    }
+
+    &__product-name {
+      width: 300px;
+    }
+
+    &__product-price {
+      width: 150px;
+    }
+
+    &__payment-status {
+      width: 150px;
+
+      span {
+        font-weight: 700;
+        padding: 8px 10px;
+        border-radius: 5px;
+
+        &.success {
+          background: #2651a3;
+          color: #fff;
+        }
+
+        &.pending {
+          background: #eee;
+        }
+      }
+    }
+
+    &__end-date {
+      width: 120px;
+    }
+
+    &__refund-price {
+      width: 140px;
+    }
+
+    &__submit {
+      width: 100px;
+    }
+  }
+}

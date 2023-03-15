@@ -1,0 +1,13 @@
+.real-time-chart {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  &__btcusdt {
+    width: 600px;
+    margin: 0px;
+  }
+  &__dominance {
+    width: 500px;
+    margin: 0px;
+  }
+}

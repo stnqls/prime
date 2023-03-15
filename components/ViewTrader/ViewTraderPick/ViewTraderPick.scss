@@ -1,0 +1,175 @@
+.view-trader-pick {
+  margin-top: 120px;
+  &__title {
+    font-size: 24px;
+    color: #333;
+    line-height: 27px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eceff1;
+    margin-bottom: 50px;
+  }
+
+  &__contents {
+    width: 1360px;
+    min-height: 300px;
+    max-height: 900px;
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+
+    &__table {
+      display: block;
+      &__subject {
+        padding: 0 20px;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        border-top: 1px solid #cfd8dc;
+        border-bottom: 1px solid #cfd8dc;
+        height: 80px;
+        font-size: 18px;
+        color: #333;
+        font-weight: 700;
+
+        &__package {
+          width: 161px;
+        }
+
+        &__type {
+          width: 77px;
+        }
+
+        &__coin {
+          width: 173px;
+        }
+
+        &__pair {
+          width: 95px;
+        }
+
+        &__entry-price {
+          width: 168px;
+        }
+
+        &__target-price {
+          width: 161px;
+        }
+
+        &__entry-date {
+          width: 84px;
+        }
+
+        &__end-price {
+          width: 184px;
+        }
+
+        &__end-date {
+          width: 84px;
+        }
+        &__profit-rate {
+          width: 134px;
+        }
+      }
+
+      &__item {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+    }
+    &__mtable,
+    &__mnone {
+      display: none;
+    }
+    &__none {
+      font-size: 24px;
+      color: #333;
+      line-height: 27px;
+      text-align: center;
+      margin: 110px 0 120px;
+    }
+
+    &__paging {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      margin-top: 30px;
+
+      span {
+        padding: 10px 14px;
+        font-weight: 700;
+        font-size: 17px;
+        border-radius: 100%;
+        overflow: hidden;
+
+        &.now {
+          background: rgb(0, 131, 219);
+          color: rgb(255, 255, 255);
+        }
+      }
+
+      &__prev {
+        color: rgb(0, 131, 219);
+      }
+
+      &__next {
+        color: rgb(0, 131, 219);
+      }
+    }
+
+    & .pagination {
+      margin-top: 80px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .view-trader-pick {
+    margin-top: 56px;
+    &__title {
+      font-size: 13px;
+      color: #333;
+      line-height: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eceff1;
+      margin-bottom: 2+0px;
+    }
+
+    &__contents {
+      width: auto;
+      max-height: 900px;
+      margin: 0 auto;
+      position: relative;
+      background: #fff;
+
+      &__table,
+      &__none {
+        display: none;
+      }
+
+      &__mtable {
+        display: block;
+      }
+
+      &__mnone {
+        display: block;
+        font-size: 10px;
+        color: #333;
+        line-height: 12px;
+        text-align: center;
+        margin: 40px 0 60px;
+      }
+
+      & .pagination {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

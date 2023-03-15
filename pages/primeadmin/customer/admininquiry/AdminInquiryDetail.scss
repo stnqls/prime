@@ -1,0 +1,131 @@
+.admin-inquiry-detail {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2.4px 28px 0 rgba(58, 59, 69, 0.15);
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  &__info {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__boardinfo {
+    display: flex;
+    margin-bottom: 20px;
+    &__title {
+      margin-right: 160px;
+    }
+  }
+  &__content {
+    margin-bottom: 5px;
+    &__text {
+      width: 100%;
+      min-height: 300px;
+      max-height: 300px;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      background-color: #dddddd;
+      overflow-y: auto;
+      margin-bottom: 20px;
+      word-break: break-all;
+    }
+  }
+  &__text {
+    min-width: 100px;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #dddddd;
+  }
+
+  &__img {
+    display: flex;
+    &__item {
+      width: 100px;
+      height: 100px;
+      margin-right: 45px;
+      & > a > img {
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+
+  &__answer {
+    margin-top: 20px;
+
+    &__title {
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__modifybtn {
+      border: none;
+      width: 100px;
+      height: 40px;
+      background-color: #4e73df;
+      color: #fff;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    &__modifytext {
+      width: 100%;
+      min-height: 100px;
+      height: 270px;
+      padding: 5px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      background-color: #dddddd;
+      overflow-y: auto;
+      resize: none;
+      border: none;
+    }
+    &__text {
+      min-width: 100px;
+      min-height: 100px;
+      max-height: 270px;
+      width: auto;
+      padding: 5px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      overflow-y: auto;
+    }
+  }
+  &__btns {
+    display: flex;
+    justify-content: end;
+    &__replybtn {
+      width: 80px;
+      height: 40px;
+      border: none;
+      background-color: #4e73df;
+      color: #fff;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+    &__deletebtn {
+      margin: 0;
+      margin-left: 20px;
+    }
+  }
+}

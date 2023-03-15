@@ -1,0 +1,76 @@
+.boardmodal {
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 1000px;
+  max-height: 800px;
+  padding: 30px;
+  box-sizing: border-box;
+  color: #333;
+  border-radius: 5px;
+  overflow-y: auto;
+  z-index: 99;
+  &__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  &__title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  &__x {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    & img {
+      width: 25px;
+      height: 25px;
+    }
+    cursor: pointer;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    &__info {
+      text-align: left;
+    }
+    &__count {
+      display: flex;
+      align-items: flex-end;
+      &__view {
+        margin-right: 10px;
+      }
+    }
+  }
+  &__body {
+    min-height: 450px;
+    border: 1px solid #9e9e9e;
+    padding: 7px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    text-align: left;
+  }
+  &__comments {
+    text-align: left;
+    border-top: 1px solid #dfdcdc;
+    padding: 5px;
+    box-sizing: border-box;
+    &__title {
+      font-size: 18px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  &__delete {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}

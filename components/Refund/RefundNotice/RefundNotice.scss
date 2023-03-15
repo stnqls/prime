@@ -1,0 +1,29 @@
+.refund-notice {
+  &__contents {
+    padding: 50px;
+    border-radius: 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.05);
+    background: #fff;
+
+    &__title {
+      font-size: 19px;
+      font-weight: 900;
+      color: #555;
+    }
+
+    &__lists {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-top: 30px;
+
+      li {
+        margin-top: 5px;
+        font-family: "Noto Sans KR", serif, Arial;
+        font-size: 14px;
+        color: #555;
+      }
+    }
+  }
+}

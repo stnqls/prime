@@ -1,0 +1,80 @@
+.trader-status-adjustment-list {
+  width: 100%;
+  height: 100%;
+  &__table {
+    &__subject {
+      padding: 11px 24px;
+      list-style: none;
+      background: #2551a3;
+      border-radius: 27px;
+      margin-bottom: 15px;
+      height: 40px;
+      text-align: center;
+
+      li {
+        position: relative;
+        display: table-cell;
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;
+        vertical-align: middle;
+        line-height: 1;
+        float: left;
+      }
+
+      &__nickname {
+        width: 140px;
+      }
+
+      &__product-name {
+        width: 270px;
+      }
+
+      &__product-price {
+        width: 140px;
+      }
+
+      &__payment-status {
+        width: 150px;
+      }
+
+      &__end-date {
+        width: 200px;
+      }
+
+      &__refund-price {
+        width: 140px;
+      }
+
+      &__submit {
+        width: 60px;
+      }
+    }
+
+    &__lists {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    &__item {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      min-height: 670px;
+    }
+  }
+  &__none {
+    font-size: 30px;
+    line-height: 46px;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.75px;
+    margin-top: 124px;
+  }
+
+  & .pagination {
+    margin: 20px 0;
+  }
+}

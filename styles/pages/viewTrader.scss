@@ -1,0 +1,48 @@
+.view-trader {
+  background: #fff;
+
+  &__contents {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 110px 0 180px;
+
+    &__box {
+      margin: 0 auto;
+      max-width: 1400px;
+
+      &__top {
+        min-height: 300px;
+        position: relative;
+        &__info {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .view-trader {
+    &__contents {
+      max-width: 360px;
+      margin: 0 auto;
+      padding: 40px 32px;
+
+      &__box {
+        margin: 0 auto;
+        max-width: 360px;
+
+        &__top {
+          min-height: 0px;
+          position: relative;
+          &__info {
+            position: relative;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+.chart {
+  background-color: #252a4a;
+  width: 100%;
+  padding: 154px 0px 180px;
+  text-align: center;
+  &__title {
+    color: #fff;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 9px;
+  }
+  &__subtitle {
+    font-size: 16px;
+    color: #fff;
+    line-height: 19px;
+  }
+
+  &__contents {
+    max-width: 1600px;
+    margin: 0 auto;
+
+    &__link {
+      width: 1600px;
+      display: flex;
+      margin: 45px auto 0;
+      background-color: #000;
+      height: 60px;
+      padding: 19px 30px;
+
+      &__title {
+        color: #fff;
+        margin-right: 230px;
+        font-size: 21px;
+        line-height: normal;
+      }
+
+      &__list {
+        display: flex;
+        color: #fff;
+        align-items: center;
+
+        &__item {
+          margin-right: 12px;
+          cursor: pointer;
+          & span {
+            font-size: 16px;
+            color: #2979ff;
+          }
+          & a > img {
+            width: 120px;
+            height: 40px;
+          }
+          &:first-child {
+            letter-spacing: -0.37px;
+            width: 86px;
+            font-size: 13px;
+            margin-right: 15px;
+            cursor: default;
+          }
+          &:last-child {
+            line-height: normal;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    &__graph {
+      width: 1600px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    &__middle {
+      margin: 10px 0;
+      display: flex;
+      &__left {
+        &__top {
+          display: flex;
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &__bottom {
+      display: flex;
+    }
+
+    &__chat {
+      position: relative;
+      &__img {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        position: fixed;
+        bottom: 35px;
+        right: 35px;
+        z-index: 10;
+      }
+    }
+  }
+}
+
+#tradingview_widget_wrapper {
+  & > div:last-child {
+    display: none;
+  }
+}

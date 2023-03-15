@@ -1,0 +1,62 @@
+.message {
+  &__content {
+    position: relative;
+    margin-bottom: 10px;
+    background-color: #2551a3;
+    border-radius: 10px 4px 10px 10px;
+    width: 70%;
+    float: right;
+    padding: 10px;
+    margin-right: 5px;
+    &__text {
+      font-size: 16px;
+      color: #fff;
+      white-space: normal;
+      word-break: break-all;
+    }
+    &__time {
+      font-size: 13px;
+      margin-top: 3px;
+      text-align: right;
+      color: #fff;
+      font-weight: 300;
+    }
+    &__status {
+      position: absolute;
+      bottom: 0;
+      left: -35px;
+      font-size: 13px;
+      color: #90a4ae;
+    }
+  }
+
+  &__content--receiver {
+    position: relative;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 4px 10px 10px 10px;
+    width: 70%;
+    float: left;
+    padding: 10px;
+    margin-right: 5px;
+    &__text {
+      font-size: 16px;
+      color: #333;
+      white-space: normal;
+      word-break: break-all;
+    }
+    &__time {
+      font-size: 13px;
+      margin-top: 3px;
+      text-align: right;
+      color: #90a4ae;
+    }
+    &__status {
+      position: absolute;
+      bottom: 0;
+      right: -35px;
+      font-size: 13px;
+      color: #90a4ae;
+    }
+  }
+}

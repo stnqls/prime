@@ -1,0 +1,146 @@
+.trader-status-pick {
+  position: relative;
+  border-top: 1px solid #cfd8dc;
+
+  &__contents {
+    &__title {
+      font-size: 19px;
+      font-weight: 900;
+      color: #000;
+    }
+
+    &__button {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 5px 15px 7px;
+        background: rgb(0, 131, 219);
+        color: rgb(255, 255, 255);
+        border-radius: 1000px;
+        float: left;
+        margin-left: 15px;
+      }
+    }
+
+    &__table {
+      &__subject {
+        padding: 0;
+        margin: 0;
+        margin-top: 30px;
+        list-style: none;
+        background: #f5f5f5;
+
+        li {
+          position: relative;
+          font-family: "Noto Sans KR", serif, Arial;
+          display: table-cell;
+          font-size: 14px;
+          font-weight: 400;
+          color: rgb(145, 145, 145);
+          vertical-align: middle;
+          line-height: 1;
+          padding: 10px;
+          padding-bottom: 12px;
+          float: left;
+        }
+
+        &__type {
+          width: 80px;
+        }
+
+        &__coin {
+          width: calc(100% - 760px);
+        }
+
+        &__entry-price {
+          width: 100px;
+        }
+
+        &__target-price {
+          width: 100px;
+        }
+
+        &__end-price {
+          width: 100px;
+        }
+
+        &__entry-date {
+          width: 140px;
+        }
+
+        &__end-date {
+          width: 140px;
+        }
+
+        &__profit-rate {
+          width: 100px;
+          text-align: right;
+        }
+      }
+
+      &__lists {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+
+        li {
+          float: left;
+          width: 33.33%;
+          border-right: 1px solid lightgray;
+
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }
+
+      &__item {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+    }
+
+    &__none {
+      position: absolute;
+      font-size: 17px;
+      color: #555;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      font-weight: 700;
+      margin-top: 30px;
+    }
+
+    &__paging {
+      text-align: center;
+      margin-top: 30px;
+
+      span {
+        padding: 10px 14px;
+        font-weight: 700;
+        font-size: 17px;
+        border-radius: 100%;
+        overflow: hidden;
+
+        &.now {
+          background: rgb(0, 131, 219);
+          color: rgb(255, 255, 255);
+        }
+      }
+
+      &__prev {
+        color: rgb(0, 131, 219);
+      }
+
+      &__next {
+        color: rgb(0, 131, 219);
+      }
+    }
+  }
+}

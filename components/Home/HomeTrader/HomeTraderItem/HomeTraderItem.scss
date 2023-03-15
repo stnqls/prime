@@ -1,0 +1,141 @@
+.home-trader-item {
+  cursor: pointer;
+  transition: all 0.5s;
+  &__contents {
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #eceff1;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+    transition: background 0.2s;
+
+    &:hover {
+      background: #eceff1;
+    }
+
+    &__nickname {
+      transition: all 0.3s;
+      font-size: 24px;
+      line-height: 27px;
+      font-weight: 900;
+      text-align: center;
+      margin-top: 40px;
+      padding: 0 40px;
+      word-break: break-all;
+    }
+
+    &__tags {
+      width: 100%;
+      padding: 0 40px;
+      margin: 0;
+      margin-top: 6px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      &__item {
+        font-size: 18px;
+        color: #9e9e9e;
+        line-height: 20px;
+      }
+      &--none {
+        height: 46px;
+      }
+    }
+
+    &__thumbnail {
+      transition: all 0.3s;
+      position: relative;
+      border-radius: 100%;
+      width: 124px;
+      height: 124px;
+      overflow: hidden;
+      background: #ebf3fa;
+      border: 1px solid #9e9e9e;
+      margin: 30px auto 40px;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__room-members {
+      &__text {
+        font-size: 21px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 12px;
+      }
+
+      &__value {
+        color: #1976d2;
+        font-size: 24px;
+        line-height: 27px;
+        font-weight: 700;
+        text-align: center;
+      }
+    }
+
+    &__earnings-rate {
+      margin-top: 40px;
+      &__text {
+        font-size: 21px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 12px;
+      }
+
+      &__value {
+        color: #1976d2;
+        font-size: 24px;
+        line-height: 27px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+
+    &__detail {
+      display: none;
+      width: 100%;
+      height: 87px;
+      background-color: #1976d2;
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+      padding: 30px 0;
+      line-height: normal;
+    }
+  }
+  &:hover {
+    .home-trader-item {
+      &__contents {
+        &__nickname {
+          transition: all 0.3s;
+          margin-top: 20px;
+        }
+        &__thumbnail {
+          transition: all 0.3s;
+          margin: 20px auto;
+        }
+
+        &__earnings-rate {
+          margin-top: 20px;
+          &__value {
+            margin-bottom: 20px;
+          }
+        }
+        &__detail {
+          display: block;
+        }
+      }
+    }
+  }
+}

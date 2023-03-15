@@ -1,0 +1,18 @@
+.comments {
+  color: #9e9e9e;
+  &__title {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .comments {
+    color: #9e9e9e;
+    &__title {
+      font-size: 8px;
+      line-height: 9px;
+      margin-bottom: 6px;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.admin-faq {
+  width: 100%;
+  &__content {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2.4px 28px 0 rgba(58, 59, 69, 0.15);
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      background-color: #f8f9fc;
+      border-bottom: 1px solid #e3e6f0;
+      &__title {
+        font-weight: 700;
+        display: flex;
+        color: #333;
+        &__item {
+          margin-right: 10px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        &__item--click {
+          color: #4e73df;
+          margin-right: 10px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      &__addbtn {
+        border: 2px solid #4e73df;
+        border-radius: 7px;
+        background-color: transparent;
+        width: 70px;
+        height: 30px;
+        &:hover {
+          cursor: pointer;
+          background-color: #4e73df;
+          color: #fff;
+        }
+      }
+    }
+    &__body {
+      &__none {
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 900;
+        padding: 50px 0;
+        color: rgb(126, 126, 126);
+      }
+    }
+  }
+}
+
+.admin-faq__table {
+  width: 100%;
+  border-collapse: collapse;
+  &__head {
+    text-align: center;
+    &__tr {
+      height: 40px;
+      color: #fff;
+      background-color: #4e73df;
+      font-weight: 700;
+    }
+    td {
+      vertical-align: middle;
+      cursor: pointer;
+    }
+  }
+  &__body {
+    text-align: center;
+    font-size: 15px;
+    &__tr {
+      height: 40px;
+      &:hover {
+        background-color: rgba(#4e73df, 0.4);
+        cursor: pointer;
+      }
+      & > td {
+        vertical-align: middle;
+      }
+    }
+    &__answer--none {
+      display: none;
+    }
+    &__answer {
+      background-color: #e9e9e9;
+      &__an {
+        width: 100%;
+        padding: 10px;
+        &__text {
+          width: 100%;
+          resize: none;
+          padding: 10px;
+          box-sizing: border-box;
+        }
+        &__btn {
+          float: right;
+          width: 80px;
+          height: 40px;
+          border: none;
+          color: #fff;
+          background-color: #4e73df;
+          border-radius: 7px;
+          cursor: pointer;
+        }
+      }
+      &__delete {
+        float: right;
+        margin-left: 10px;
+        width: 80px;
+        height: 40px;
+        border: none;
+        color: #fff;
+        background-color: #e74a3b;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.view-trader-pick-item {
+  &__contents {
+    &__list {
+      padding: 0 20px;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      font-size: 18px;
+      height: 80px;
+      border-bottom: 1px solid #cfd8dc;
+      width: 1360px;
+
+      &__package {
+        width: 161px;
+        word-break: break-all;
+      }
+
+      &__type {
+        width: 77px;
+      }
+
+      &__coin {
+        width: 173px;
+      }
+
+      &__pair {
+        width: 95px;
+      }
+
+      &__entry-price {
+        width: 168px;
+      }
+
+      &__target-price {
+        width: 161px;
+      }
+
+      &__entry-date {
+        width: 84px;
+      }
+      &__end-price {
+        width: 184px;
+
+        &.over {
+          color: #089981;
+        }
+
+        &.under {
+          color: #dd2c00;
+        }
+      }
+      &__end-date {
+        width: 84px;
+      }
+
+      &__profit-rate {
+        width: 134px;
+        span {
+          position: relative;
+          display: none;
+          top: -1px;
+          line-height: 1;
+          padding-left: 3px;
+        }
+
+        &.over {
+          color: #089981;
+
+          .view-trader-pick-item__contents__list__end-price__up {
+            display: inline-block;
+          }
+        }
+
+        &.under {
+          color: #dd2c00;
+
+          .view-trader-pick-item__contents__list__end-price__down {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}

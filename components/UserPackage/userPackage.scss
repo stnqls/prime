@@ -1,0 +1,63 @@
+@media only screen and (max-width: 767px) {
+  .user-package {
+    padding-left: 0;
+    background-image: url("/images/illustration/find-trader-background.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    &__contents {
+      margin: 0 auto;
+      padding: 0px;
+      padding-bottom: 0px;
+
+      &__box {
+        margin: 0 auto;
+        max-width: 360px;
+        padding: 0px;
+
+        &__title {
+          display: none;
+        }
+
+        &__button {
+          margin-top: 25px;
+          list-style: none;
+
+          // &__save {
+          //   width: calc(50% - 15px);
+          //   margin-right: 30px;
+          //   cursor: pointer;
+          //   background: rgb(158, 158, 158);
+          //   padding: 20px;
+          //   color: #fff;
+          //   border-radius: 1000px;
+          //   text-align: center;
+          //   font-size: 19px;
+          //   font-weight: 700;
+          //   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.05);
+          //   float: left;
+          // }
+
+          &__add {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 75px;
+            cursor: pointer;
+            background: #0083db;
+            padding: 20px;
+            color: #fff;
+            border-radius: 1000px;
+            text-align: center;
+            font-size: 19px;
+            font-weight: 700;
+            box-shadow: 0 6px 6px rgba(0, 0, 0, 0.05);
+          }
+        }
+
+        &__back {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.admin-reviews-table {
+  width: 100%;
+  border-collapse: collapse;
+  &__thead {
+    text-align: center;
+    &__tr {
+      height: 40px;
+      color: #fff;
+      background-color: #4e73df;
+      font-weight: 700;
+      & > td {
+        vertical-align: middle;
+      }
+    }
+  }
+  &__tbody {
+    text-align: center;
+    font-size: 15px;
+    &__tr {
+      height: 40px;
+      border-top: 1px solid #eee;
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(#4e73df, 0.4);
+      }
+    }
+  }
+}

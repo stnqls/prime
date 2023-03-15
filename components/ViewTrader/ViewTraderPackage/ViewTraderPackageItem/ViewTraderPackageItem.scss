@@ -1,0 +1,169 @@
+.view-trader-package-item {
+  cursor: pointer;
+  border: 1px solid #cfd8dc;
+  background-color: #fff;
+  padding: 60px 30px 34px;
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px 0px rgba(144, 164, 174, 0.16);
+  height: 470px;
+
+  &__contents {
+    &__title {
+      color: #2551a3;
+      font-size: 22px;
+      font-weight: 900;
+      white-space: normal;
+      line-height: 32px;
+      height: 57px;
+      text-align: center;
+      word-wrap: break-word;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    &__line {
+      width: 30px;
+      height: 1px;
+      border-bottom: #90a4ae;
+      margin: 0 auto;
+    }
+
+    &__paragraph {
+      color: #9e9e9e;
+      white-space: normal;
+      height: 70px;
+      text-align: center;
+      word-wrap: break-word;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      margin-top: 36px;
+      font-size: 16px;
+      font-weight: 400;
+      overflow: hidden;
+    }
+
+    &__rate {
+      margin-top: 28px;
+      height: 25px;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.55px;
+      color: #333;
+      text-align: center;
+    }
+
+    &__price {
+      height: 26px;
+      font-size: 24px;
+      font-weight: 900;
+      margin-top: 27px;
+      color: #333;
+      text-align: center;
+    }
+
+    &__button {
+      height: 60px;
+      position: relative;
+      cursor: pointer;
+      margin: 0 auto;
+      margin-top: 26px;
+      background: #2551a3;
+      padding: 20px 0;
+      color: #fff;
+      border-radius: 3px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: normal;
+      justify-self: end;
+    }
+  }
+  &:hover {
+    background-color: #eceff1;
+    .view-trader-package-item__contents__button {
+      background-color: #1976d2;
+    }
+  }
+}
+.over {
+  color: #089981;
+}
+
+.under {
+  color: #dd2c00;
+}
+
+@media only screen and (max-width: 767px) {
+  .view-trader-package-item {
+    cursor: pointer;
+    border: 0.5px solid #cfd8dc;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 6px 0px rgba(144, 164, 174, 0.16);
+    margin-bottom: 16px;
+    &__contents {
+      &__title {
+        color: #2551a3;
+        font-size: 12px;
+        font-weight: 900;
+        white-space: normal;
+        line-height: 15px;
+        height: 15px;
+        text-align: left;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 6px;
+        letter-spacing: -0.6px;
+      }
+
+      &__paragraph {
+        display: none;
+      }
+
+      &__price {
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 0px;
+        color: #333;
+        text-align: left;
+        letter-spacing: -0.6px;
+        float: left;
+      }
+
+      &__button {
+        width: 55px;
+        height: 22px;
+        position: relative;
+        cursor: pointer;
+        margin: 0;
+        margin-top: 0px;
+        background: #2551a3;
+        padding: 5px;
+        color: #fff;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: normal;
+        float: right;
+      }
+    }
+    &:hover {
+      background-color: #eceff1;
+      .view-trader-package-item__contents__button {
+        background-color: #1976d2;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

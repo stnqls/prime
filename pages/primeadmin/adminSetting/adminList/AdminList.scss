@@ -1,0 +1,13 @@
+.adminlist-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 15px;
+  box-sizing: border-box;
+  position: relative;
+  & .pagination {
+    margin-top: 15px;
+    position: absolute;
+    bottom: 0;
+  }
+}

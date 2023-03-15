@@ -1,0 +1,96 @@
+.view-trader-package {
+  margin-top: 50px;
+
+  &__contents {
+    &__title {
+      font-size: 24px;
+      line-height: 27px;
+      color: #333;
+      margin-bottom: 50px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eceff1;
+    }
+
+    &__lists {
+      display: block;
+      padding: 0;
+      margin: 0 auto;
+      list-style: none;
+      margin-left: 100px;
+      overflow: visible;
+      .swiper-container {
+        width: 100%;
+        padding-bottom: 39px;
+        & .swiper-slide {
+          width: 320px !important;
+        }
+        & > .swiper-scrollbar {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 500px;
+          height: 7px;
+          border-radius: 10px;
+          cursor: pointer;
+          background-color: #eceff1;
+          & > .swiper-scrollbar-drag {
+            width: 310px;
+            height: 7px;
+            border-radius: 10px;
+            background-color: #90a4ae;
+          }
+        }
+      }
+    }
+
+    &__mlists {
+      display: none;
+    }
+
+    &__none {
+      text-align: center;
+      font-size: 24px;
+      line-height: 27px;
+      color: #333;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .view-trader-package {
+    margin-top: 30px;
+
+    &__contents {
+      .swiper-container {
+        overflow: visible;
+      }
+      &__title {
+        font-size: 13px;
+        line-height: 14px;
+        color: #333;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eceff1;
+      }
+
+      &__lists {
+        display: none;
+      }
+
+      &__mlists {
+        display: block;
+        min-height: 112px;
+      }
+
+      &__none {
+        text-align: center;
+        font-size: 10px;
+        line-height: 12px;
+        color: #333;
+        margin-bottom: 35px;
+      }
+    }
+  }
+}

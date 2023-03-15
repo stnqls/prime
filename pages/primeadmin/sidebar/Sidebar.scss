@@ -1,0 +1,100 @@
+.sidebar {
+  position: fixed;
+  height: 100%;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  background-color: #4e73df;
+  z-index: 10;
+  width: auto;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  padding: 20px 0;
+  &__list {
+    &__top {
+      color: #fff;
+      padding: 8px 16px 0;
+      box-sizing: border-box;
+      font-size: 19px;
+      font-weight: 900;
+      height: 80px;
+
+      span {
+        cursor: pointer;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 190px;
+        height: 1px;
+        margin-top: 24px;
+      }
+      &__home {
+        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+        float: left;
+      }
+    }
+
+    &__item {
+      color: #fff;
+      padding: 24px 16px 0;
+      box-sizing: border-box;
+      font-size: 16px;
+      border-top: 1px solid rgba($color: #ffffff, $alpha: 0.15);
+
+      &::after {
+        content: "";
+        display: block;
+        width: 190px;
+        height: 1px;
+
+        margin-top: 24px;
+      }
+      &__title {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+
+        &__img {
+          width: 24px;
+          margin-right: 8px;
+        }
+      }
+      &__arrow {
+        width: 20px;
+        height: 20px;
+      }
+
+      &__sublist {
+        display: none;
+        max-width: 192px;
+        padding: 8px 0;
+        background-color: #fff;
+        border-radius: 8px;
+        color: #3a3b45;
+        margin-top: 16px;
+        &__subitem {
+          font-size: 14px;
+          font-weight: 700;
+          padding: 8px 16px;
+          box-sizing: border-box;
+          border-radius: 10px;
+          margin: 0 8px;
+          &:hover {
+            background-color: rgba(78, 115, 223, 0.5);
+            cursor: pointer;
+          }
+        }
+      }
+      .show {
+        display: block;
+      }
+    }
+  }
+}

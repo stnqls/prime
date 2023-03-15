@@ -1,0 +1,102 @@
+.pagination {
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & li {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > a {
+      color: #9e9e9e;
+    }
+    &.active {
+      background-color: #2551a3;
+      font-size: 18px;
+      line-height: 24px;
+      & > a {
+        color: #fff;
+      }
+    }
+    &:first-child,
+    &:last-child {
+      display: none;
+    }
+    &:nth-child(2),
+    &:nth-last-child(2) {
+      width: 30px;
+      height: 30px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    &:nth-child(2) {
+      background-image: url("/assets/page_left.png");
+      margin-right: 15.7px;
+      cursor: pointer;
+    }
+    &:nth-last-child(2) {
+      background-image: url("/assets/page_right.png");
+      margin-left: 15.7px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pagination {
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & li {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 3px;
+      & > a {
+        color: #9e9e9e;
+      }
+      &.active {
+        background-color: #2551a3;
+        font-size: 11px;
+        line-height: 15px;
+        & > a {
+          color: #fff;
+        }
+      }
+      &:first-child,
+      &:last-child {
+        display: none;
+      }
+      &:nth-child(2),
+      &:nth-last-child(2) {
+        width: 7px;
+        height: 14px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &:nth-child(2) {
+        background-image: url("/assets/page_left.png");
+        margin-right: 13px;
+        cursor: pointer;
+      }
+      &:nth-last-child(2) {
+        background-image: url("/assets/page_right.png");
+        margin-left: 13px;
+        cursor: pointer;
+      }
+    }
+  }
+}

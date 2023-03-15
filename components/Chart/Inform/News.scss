@@ -1,0 +1,102 @@
+.news {
+  width: 450px;
+  height: 390px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #1e202c;
+  border-radius: 3px;
+  &__head {
+    height: 51px;
+    position: relative;
+    padding: 15px 0 16px;
+    border-bottom: 1px solid #313442;
+    line-height: normal;
+    & > a {
+      font-size: 18px;
+      color: #fff;
+      cursor: pointer;
+    }
+    &__logo {
+      position: absolute;
+      top: 18px;
+      left: 12px;
+      font-size: 15px;
+      line-height: 18px;
+      color: #fff;
+      & > img {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+      }
+    }
+  }
+  &__date {
+    color: #fff;
+    text-align: left;
+    padding: 14px 12px;
+    font-size: 11px;
+    line-height: 12px;
+    background-color: #141414;
+    margin-bottom: 13px;
+  }
+
+  &__list {
+    height: 338px;
+    padding-bottom: 14px;
+    overflow-y: scroll;
+    // -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      width: 2px;
+      background-color: #1e202c;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 2px;
+      height: 234px;
+      background-color: #90a4ae;
+      border-radius: 2px;
+    }
+    &__item {
+      margin-left: 16px;
+      display: flex;
+      color: #fff;
+      margin-bottom: 20px;
+
+      &__time {
+        width: 36px;
+        height: 16px;
+        padding: 3.5px 5px;
+        font-size: 9px;
+        color: #fff;
+        line-height: 11px;
+        background-color: #333;
+        margin-right: 10px;
+      }
+      &__title {
+        max-width: 362px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #fff;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        & > img {
+          display: block;
+          width: 12.1px;
+          height: 10.1px;
+          margin-right: 2.8px;
+        }
+        & > span {
+          font-size: 10px;
+          line-height: 12px;
+          color: #1976d2;
+          font-weight: 700;
+        }
+      }
+    }
+    &__item--none {
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+}

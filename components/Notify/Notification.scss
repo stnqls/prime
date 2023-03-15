@@ -1,0 +1,113 @@
+.notification {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  background-color: #fff;
+  color: #333;
+  font-size: 13px;
+  width: 327px;
+  // height: auto;
+  min-height: 182px;
+  max-height: 314px;
+  border-radius: 7px;
+  // overflow-y: auto;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.12);
+  &__top {
+    height: 48px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-size: 700;
+    align-items: center;
+    &__all {
+      cursor: pointer;
+    }
+  }
+  &__list {
+    background-color: #f3f8fe;
+    padding: 15px;
+    min-height: 86px;
+    max-height: 218px;
+    overflow-y: scroll;
+    // -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: #90a4ae;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 5px;
+      background-color: #eceff1;
+    }
+    &__item {
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #fff;
+      margin-bottom: 10px;
+      min-height: 56px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &__wrap {
+        display: flex;
+        align-items: center;
+        &__check {
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: #0d47a1;
+          margin-right: 4px;
+        }
+        &__title {
+          width: 250px;
+          font-size: 14px;
+          line-height: normal;
+          font-weight: 700;
+          color: #333;
+          display: -webkit-box;
+          word-wrap: break-word;
+          word-break: break-all;
+          &__package {
+            max-width: 65px;
+            line-height: inherit;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            word-break: break-all;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+          }
+        }
+      }
+      &__time {
+        font-size: 12px;
+        margin-top: 6px;
+        color: #90a4ae;
+        height: 13px;
+      }
+    }
+    &__none {
+      text-align: center;
+      font-size: 14px;
+      height: 16px;
+      color: #90a4ae;
+      padding: 20px 0;
+    }
+  }
+
+  &__bottom {
+    height: 48px;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #0d47a1;
+    text-align: right;
+    line-height: normal;
+    cursor: pointer;
+  }
+}

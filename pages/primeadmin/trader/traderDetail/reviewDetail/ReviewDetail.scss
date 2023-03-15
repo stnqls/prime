@@ -1,0 +1,35 @@
+.reviewdetail {
+  border-collapse: collapse;
+
+  &__none {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 900;
+    padding: 50px 0;
+    color: rgb(126, 126, 126);
+  }
+
+  &__thead {
+    &__tr {
+      background-color: #4e73df;
+      color: #fff;
+      text-align: center;
+      height: 40px;
+    }
+  }
+  &__tbody {
+    &__tr {
+      text-align: center;
+      height: 40px;
+    }
+    &__more {
+      &__img {
+        cursor: pointer;
+        background-color: #4e73df;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
+}

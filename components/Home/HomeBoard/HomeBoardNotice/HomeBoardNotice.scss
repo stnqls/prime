@@ -1,0 +1,110 @@
+.home-board-notice {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-top: 60px;
+
+  &__contents {
+    padding: 9px;
+    padding-right: 15px;
+    border: 1px solid #eceff1;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    &__title {
+      width: 48px;
+      height: 30px;
+      font-size: 16px;
+      color: #fff;
+      padding: 6px 10px;
+      background-color: #0d47a1;
+      border-radius: 4px;
+      line-height: normal;
+    }
+
+    &__lists {
+      width: 100%;
+      margin-left: 30px;
+      padding: 0;
+      list-style: none;
+      height: 20px;
+      position: relative;
+
+      & .swiper-container {
+        position: unset;
+        & .swiper-pagination {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    &__more {
+      font-size: 16px;
+      color: #0d47a1;
+      position: absolute;
+      top: 12px;
+      right: 51px;
+      z-index: 2;
+    }
+    &__mlists {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .home-board-notice {
+    padding-top: 20px;
+    background: #f3f8fe;
+
+    &__contents {
+      max-width: 328px;
+      height: 28px;
+      margin: 0 auto;
+      padding: 8px;
+      padding-right: 0px;
+      border: 1px solid #eceff1;
+      background-color: #fff;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      &__title {
+        display: none;
+      }
+
+      &__lists {
+        width: 260px;
+        margin-left: 0px;
+        padding: 0;
+        list-style: none;
+        height: 12px;
+        position: relative;
+
+        & .swiper-container {
+          position: unset;
+          & .swiper-pagination {
+            display: none;
+          }
+        }
+      }
+      &__more {
+        font-size: 11px;
+        color: #0d47a1;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 2;
+      }
+      &__mlists {
+        display: none;
+      }
+    }
+  }
+}

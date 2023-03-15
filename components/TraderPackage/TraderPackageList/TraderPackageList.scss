@@ -1,0 +1,46 @@
+.trader-package-list {
+  &__sort {
+    display: flex;
+    margin-bottom: 45px;
+    &__list {
+      font-size: 16px;
+      line-height: 18px;
+      color: #9e9e9e;
+      cursor: pointer;
+      &.clicked {
+        color: #333;
+      }
+    }
+    & > span {
+      margin: 0 13px;
+      color: #9e9e9e;
+    }
+  }
+
+  &__contents {
+    &__lists {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      position: relative;
+      min-height: 700px;
+      & > .pagination {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+
+  &__none {
+    margin-top: 124px;
+
+    &__title {
+      font-size: 30px;
+      line-height: 46px;
+      color: #333;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: -0.75px;
+    }
+  }
+}

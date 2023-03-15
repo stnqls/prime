@@ -1,0 +1,33 @@
+.trader-apply {
+  width: 500px;
+  margin: 150px auto 0;
+  color: #333;
+  text-align: center;
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  &__subtitle {
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  &__btn {
+    width: 242px;
+    height: 60px;
+    background-color: #2551a3;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 3px;
+    padding: 20px 0;
+    line-height: normal;
+    margin: 50px auto 0;
+    cursor: pointer;
+  }
+
+  &__status {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2551a3;
+  }
+}
